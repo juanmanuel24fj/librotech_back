@@ -1,6 +1,8 @@
-
 # Build stage
 FROM maven:3.8.3-openjdk-17 AS build
+
+# Establecer el directorio de trabajo
+WORKDIR /app
 
 # Copiar el pom.xml y el código fuente
 COPY pom.xml .
